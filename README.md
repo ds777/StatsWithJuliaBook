@@ -1,7 +1,7 @@
 # Statistics with Julia: Fundamentals for Data Science, Machine Learning and Artificial Intelligence
 
 
-This repository is a collection of all 200+ code blocks contained in the book. See the [Book's website](https://statisticswithjulia.org/index.html), or go directly to Springer:
+[This repository](https://github.com/h-Klok/StatsWithJuliaBook) is a collection of all 200+ code blocks contained in the book. See the [Book's website](https://statisticswithjulia.org/index.html), or go directly to Springer:
 
 [![bookCoverImage](https://statisticswithjulia.org/img/book1Cover.png)](https://www.springer.com/gp/book/9783030709006)
 
@@ -27,9 +27,20 @@ This repository is a collection of all 200+ code blocks contained in the book. S
 ## Usage instructions:
 
 1. Clone or download this repository or a fork of it.
-1. Have Julia 1.4 or above installed.
-1. Run init.jl to install and precompile the required packages.
-1. Run individual code examples.
+2. Have Julia 1.4 or above installed.
+3. Run init.jl to install and precompile the required packages.
+
+```
+using Pkg
+cd(@__DIR__)
+Pkg.activate(".")
+Pkg.instantiate()
+#Pkg.precompile()
+```
+
+4. Run individual code examples.
+
+
 
 ---
 
